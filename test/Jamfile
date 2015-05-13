@@ -1,0 +1,5 @@
+exe unittests : [ glob *.cpp ] ..//config ../lib/tinytest//tinytest ;
+
+using testing ;
+
+unit-test config-unittests : unittests ;

@@ -1,0 +1,12 @@
+
+lib config : [ glob src/*.cpp ] :
+	<cxxflags>"--std=c++1y"
+: :
+	<cxxflags>"--std=c++1y"
+;
+
+exe example : [ glob example-src/*.cpp ] config ;
+
+install . : example config ;
+
+build-project test ;
